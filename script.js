@@ -85,7 +85,7 @@ require([
       // Reference the popupTemplate instance in the
       // popupTemplate property of FeatureLayer
       var featureLayer = new FeatureLayer({
-        url: "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/ArcGIS/rest/services/STL_Neighborhood/FeatureServer/0",
+        url: "http://maps.stlouisco.com/arcgis/rest/services/OpenData/OpenData/FeatureServer",
         outFields: ["*"],
         popupTemplate: template,
         renderer:renderer
