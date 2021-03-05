@@ -33,7 +33,7 @@ require([
        **************************************************************/
 
       var template = { // autocasts as new PopupTemplate()
-        title: "Neighborhood: {NHD_NAME}",
+        title: "School District: {SCHOOL_DISTRICT}",
         content: [{
           
           // It is also possible to set the fieldInfos outside of the content
@@ -41,17 +41,9 @@ require([
           // in the content, it defaults to whatever may be set within the popupTemplate.
           type: "fields",
           fieldInfos: [{
-            fieldName: "NHD_NUM",
-            label: "Neighborhood #: ",
+            fieldName: "SCHOOLCODE",
+            label: "District Code: ",
             visible: true
-          }, {
-            fieldName: "Shape__Area",
-            label: "Area: ",
-            visible: true,
-            format: {
-              digitSeparator: true,
-              places: 0
-            }
           }
          ]
         }]
